@@ -1,0 +1,364 @@
+
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
+
+body {
+  margin: 0;
+}
+
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+
+
+
+
+/* desktop */
+@media screen and ( min-width: 960px ) {
+
+  .primary-content {
+    margin-right: 6%;
+  }
+
+}
+/* refactor-shirt
+------------------------- */
+
+.refactor-shirt {
+  margin: 40px 0;
+}
+
+.refactor-shirt__title {
+  font-size: 1.6rem;
+}
+
+.refactor-shirt__image {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 10px;
+}
+
+/* site-footer
+------------------------- */
+
+.site-footer {
+  position: relative;
+  margin-top: 60px;
+  padding: 50px 0;
+  background: #161615;
+  z-index: 20; /* above page-nav */
+}
+
+/* ---- brand ---- */
+
+
+.site-footer__brand {
+  padding: 0 10px;
+}
+
+.site-footer .metafizzy-logo {
+  display: inline-block;
+  width: 50px;
+}
+
+.site-footer .metafizzy-wordmark {
+  display: inline-block;
+  width: 160px;
+  height: auto;
+}
+
+.site-footer__brand__link:hover .metafizzy-wordmark {
+  fill: #4BF;
+}
+
+/* ---- footer-copy ---- */
+
+
+.footer-copy {
+  font-size: 1.2rem;
+}
+
+/* desktop */
+@media screen and ( min-width: 768px ) {
+  .site-footer {
+    min-height: 240px;
+  }
+
+  .site-footer__brand {
+    width: 200px;
+    position: absolute;
+    left: 10px;
+    top: 50px;
+  }
+
+  .site-footer .metafizzy-logo {
+    display: block;
+    width: 100px;
+    margin: 20px auto 10px;
+  }
+
+  .site-footer .metafizzy-wordmark {
+    display: block;
+    width: 140px;
+    margin: 0 auto;
+  }
+}
+
+/* site-nav
+------------------------- */
+
+/* ---- site-nav ---- */
+
+.site-nav {
+  list-style: none;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* clear fix */
+.site-nav:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.site-nav__item {
+  display: block;
+  float: left;
+  line-height: 44px; /* inline with title */
+}
+
+.site-nav__item__link {
+  display: block;
+  padding: 0 1.0em;
+}
+
+.site-nav__item__link:hover {
+  background: #161615;
+  color: white;
+}
+
+
+@media screen and ( min-width: 768px ) {
+
+  .site-nav__item {
+    float: none;
+  }
+
+  .site-nav__item {
+    float: none;
+    font-size: 1.1rem;
+    line-height: 1.25;
+  }
+
+
+  .site-nav__item__link {
+    padding: 7px 20px;
+  }
+  
+}
+
+/* stamp
+------------------------- */
+
+.stamp {
+  position: absolute;
+  width: 30%;
+  height: 60px;
+  background: orange;
+  border: 4px dotted #161615;
+}
+
+/* ---- stamp-option-demo ---- */
+
+.stamp--stamp-option-demo-stamp1 {
+  left: 30%;
+  top: 10px;
+  width: 20%;
+  height: 100px;
+}
+
+.stamp--stamp-option-demo-stamp2 {
+  right: 10%;
+  top: 20px;
+  width: 70%;
+  height: 30px;
+}
+
+.stamp--packery {
+  right: 20%;
+  top: 80px;
+  width: 45%;
+  height: 90px;
+}
+
+/* sub-nav
+------------------------- */
+
+.sub-nav {
+  display: none;
+}
+
+@media screen and ( min-width: 768px ) {
+
+  .sub-nav-parent {
+    position: relative;
+    max-height: 2em;
+  }
+
+  .sub-nav {
+    display: block; /* visible on desktop */
+    position: absolute;
+    left: 100%;
+    top: 0;
+    list-style: none;
+    width: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: width 0.2s, opacity 0.2s;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sub-nav-parent:hover .sub-nav {
+    opacity: 1;
+    width: 190px;
+    z-index: 2; /* on top of stuff */
+  }
+
+  .sub-nav-parent:hover,
+  .sub-nav {
+    background: #161615;
+  }
+
+  .sub-nav-parent > a:after { content: '...'; }
+  .sub-nav-parent:hover > a:after { content: none; }
+
+  .sub-nav__item__link {
+    display: block;
+    padding: 5px 10px;
+  }
+
+  .sub-nav__item {
+    font-size: 1.0rem;
+  }
+  
+
+}
+
+
+
+*/
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* font-size on html for rem*/
+html {
+  font-family: Texta, sans-serif;
+  font-size: 17px;
+  line-height: 1.5;
+}
+
+html.export {
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+
+
+/* ---- headers ---- */
+
+h1, h2, h3, h4 {
+  line-height: 1.25;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 2.65em;
+  margin-bottom: 0.2em;
+  margin-top: 2.0em;
+}
+
+h1:first-child { margin-top: 0; }
+
+h2 {
+  font-weight: bold;
+}
+
+
+@media screen and ( min-width: 768px ) {
+
+  html {
+    font-size: 19px;
+  }
+
+  html.export { font-size: 16px; }
+
+  pre, code, kbd {
+    font-size: 15px;
+  }
+
+}
+
+/* main
+------------------------- */
+
+.main h1 {
+  font-size: 3.8rem;
+}
+
+.main h2 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  border-top: 2px solid #484542;
+  padding-top: 1.1em;
+  margin-top: 1.4em;
+}
+
+.main h2:target {
+  padding-left: 0.5em;
+  background: #D26;
+  color: white;
+}
+
+.main h3 {
+  font-size: 1.3rem;
+  border-top: 1px solid #484542;
+  padding-top: 0.8em;
+  margin: 1.4em 0 0.5em;
+}
+
+
+@media screen and ( min-width: 800px ) {
+
+  .main {
+    padding-top: 20px;
+    min-height: 540px; /* space so footer doesn't overlap */
+  }
+
+  .main h2 {
+    font-size: 2.4rem;
+  }
+
+  .main h3 {
+    font-size: 1.5rem;
+    padding-top: 30px;
+  }
+
+}
+
