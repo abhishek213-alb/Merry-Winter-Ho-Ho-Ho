@@ -31,6 +31,15 @@ That is why we created our site "Merry Winter Ho Ho Ho". We have a budget calcul
 - Godaddy
 - Domain.com
 
+## CockroachDB
+- We hosted the messages database in Cockroach DB.
+- We have SQL database for our data in CockroachDB
+- We found it nice to have Cockroach DB as database to store information and query info
+
+## Linode
+- We used Linode for website hosting and cloud storage. We used free credit of Linode to build and host our website. 
+- We found plenty of documentations about Linode and we discovered that Linode is easy to navigate and is user friendly. Linode staffs are approachable and friendly for questions. We had chance to connect with Linode staffs in the US and it was a nice experience. 
+
 ## Challenges we ran into
 - We had challenges to plan our project on theme and to integrate all components together. 
 - There were challenges to develop Twilio chatbot since we have free plan and we are not allowed to develop certain functions with the free plan. 
@@ -45,6 +54,8 @@ That is why we created our site "Merry Winter Ho Ho Ho". We have a budget calcul
 ## What we learned
 - We learnt to develop AI voice to communicate with customers for package tracking services. 
 - We learnt to develop Twilio to send and reply to API request with video and map
+-  We learnt to use CockroachDB
+
 
 ## What's next for Merry Winter Ho Ho Ho
 - We would like to communicate with visitors from different countries using different languages. 
